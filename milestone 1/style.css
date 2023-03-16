@@ -25,6 +25,7 @@
 
 aside {
     width: 35%;
+    max-width: 35%;
     height: 100%;
     background-color: pink;
 }
@@ -33,4 +34,51 @@ main {
     width: 65%;
     height: 100%;
     background-color: violet;
+}
+
+                              /* ASIDE */
+
+               /* aside header */
+.asideHeader, .chatHeader {
+    height: 100px;
+}
+
+.asideHeader {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.asideHeader-sx, .asideFunctions {
+    align-items: center;
+}
+.userPic {
+    height: 100%;  
+    align-items: center;
+}
+
+.userPic img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.asideFunctions {
+    font-size: 35px;
+    color: gray;
+}
+
+.asideFunctions i {
+    margin: 0 10px;
+}
+
+               /* aside search e notifiche */
+
+.asideSearch {
+    height: 200px;
+    background-color: beige;
+}
+
+.impNotif {
+    height: 60%;
+    background-color: rgb(142,218,252);
 }
