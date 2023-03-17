@@ -53,7 +53,7 @@ main {
     align-items: center;
 }
 .userPic {
-    height: 100%;  
+    height: 100%;
     align-items: center;
 }
 
@@ -74,11 +74,61 @@ main {
                /* aside search e notifiche */
 
 .asideSearch {
-    height: 200px;
+    height: 180px;
     background-color: beige;
 }
 
 .impNotif {
     height: 60%;
     background-color: rgb(142,218,252);
+    align-items: center;
+    padding: 10px;
 }
+
+.bell{ 
+    align-items: center;
+}
+
+.impNotif i{
+    color: gray;
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.riceviNot {
+    font-weight: 500;
+}
+
+.attivaNot {
+    text-decoration: underline;
+    color: gray;
+}
+
+.search {
+    padding: 10px;
+    background-color: rgb(250,250,250);
+    overflow: hidden;
+}
+
+.search input {
+    width: 85%;
+    background-color:rgb(255,255,255);
+    border: none;
+    color: gray;
+}
+
+.search button {
+    height: 50px;
+    width: 15%;
+    background-color:rgb(255,255,255);
+    border: 1px rgb(253,253,253)
+    
+}
+
+.search button i {
+    color: gray;
+}
+
