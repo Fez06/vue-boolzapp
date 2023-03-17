@@ -80,7 +80,7 @@ main {
 .chatMonitor {
     height: calc(100% - 160px);
     padding: 20px;
-    background-image: url(../../img/mine.jpg);
+    background-image: url(../img/mine.jpg);
 }
 
 .messageList {

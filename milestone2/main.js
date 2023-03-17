@@ -172,10 +172,9 @@ createApp({
         }
     },
     methods: {
-        // lastMessage() {
-        //     contacts.forEach(contactMessage => {
-        //         if 
-        //     });
-        // }
+        aCaso() {
+            console.log(this.contacts[2].messages)
+        }
+
     }
 }).mount('#App');
