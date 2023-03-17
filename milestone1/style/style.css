@@ -26,22 +26,22 @@
 }
 
 aside {
-    width: 35%;
+    width: 30%;
     height: 100%;
     background-color: pink;
 }
 
 main {
-    width: 65%;
+    width: 70%;
     height: 100%;
     background-color: violet;
     border: 1px black;
 }
 
 
-                        /* MAIN */
+/*                                    MAIN */
 
-                /* chat header */
+/*                    chat header */
 
 .chatHeader {
     background-color: lightblue;
@@ -70,6 +70,74 @@ main {
 }
 
 .chatHeader-dx i {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 10px;
 }
+
+/*                      chat messaggi */
+
+.chatMonitor {
+    height: calc(100% - 140px);
+    padding: 20px;
+    background-image: url(../../img/mine.jpg);
+}
+
+.messageList {
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.received {
+    background-color: white;
+    align-self: flex-end;
+}
+
+.sent {
+    background-color: #d6f8bc;
+    align-self: flex-start;
+}
+
+.message {
+    max-width: 80%;
+    padding: 20px 35px;
+    margin: 5px 10%;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+}
+
+.message .hour {
+    font-size: 9px;
+    color: lightgray;
+}
+
+/*                               tastiera e input vari */
+
+
+.chatInput {
+    padding: 10px 15px;
+    height: 60px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatInput i {
+    color: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.chatInput-mid {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.chatInput input {
+    height: 100%;
+    width: 90%;
+}
+
+
+
