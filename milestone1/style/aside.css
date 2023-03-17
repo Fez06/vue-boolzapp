@@ -1,124 +1,125 @@
                               /* ASIDE */
 
                /* aside header */
-               .asideHeader, .chatHeader {
-                height: 100px;
-            }
-            
-            .asideHeader {
-                justify-content: space-between;
-                padding: 10px;
-                background-color: lightblue;
-            }
-            
-            .asideHeader-sx, .asideFunctions {
-                align-items: center;
-            }
-            .userPic {
-                height: 100%;
-                align-items: center;
-            }
-            
-            .userPic img {
-                height: 80%;
-                border-radius: 50%;
-            }
-            
-            .asideFunctions {
-                font-size: 35px;
-                color: gray;
-            }
-            
-            .asideFunctions i {
-                margin: 0 10px;
-            }
-            
-                           /* aside search e notifiche */
-            
-            .asideSearch {
-                height: 180px;
-                background-color: beige;
-            }
-            
-            .impNotif {
-                height: 60%;
-                background-color: rgb(142,218,252);
-                align-items: center;
-                padding: 10px;
-            }
-            
-            .bell{ 
-                align-items: center;
-            }
-            
-            .impNotif i{
-                color: gray;
-                background-color: white;
-                border-radius: 50%;
-                padding: 20px;
-                font-size: 30px;
-                margin: 10px;
-            }
-            
-            .riceviNot {
-                font-weight: 500;
-            }
-            
-            .attivaNot {
-                text-decoration: underline;
-                color: gray;
-            }
-            
-            .search {
-                padding: 10px;
-                background-color: rgb(250,250,250);
-                overflow: hidden;
-            }
-            
-            .search input {
-                width: 80%;
-                background-color:rgb(255,255,255);
-                border: none;
-                color: gray;
-            }
-            
-            .search button {
-                height: 50px;
-                width: 20%;
-                background-color:rgb(255,255,255);
-                border: 1px rgb(253,253,253)
-                
-            }
-            
-            .search button i {
-                color: gray;
-            }
-            
-            li {
-                list-style: none;
-            }
-            .contacts li {
-                font-size: 14px;
-                padding: 5px;
-                height: 60px;
-            }
-            
-            .contacts li img {
-                align-self: center;
-                max-height: 100%;
-                border-radius: 50%;
-                margin: 0 15px;
-            }
-            
-            .friendInfo {
-                align-self: flex-start;
-            }
-            
-            .friendInfo h4 {
-                margin-bottom: 5px;
-            }
-            
-            .lastTime {
-                margin-left: auto;
-                margin-right: 5px;
-            }
+.asideHeader, .chatHeader {
+    height: 100px;
+}
+
+.asideHeader {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+.asideHeader-sx, .asideFunctions {
+    align-items: center;
+}
+.userPic {
+    height: 100%;
+    align-items: center;
+}
+
+.userPic img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.asideFunctions {
+    font-size: 25px;
+    color: gray;
+}
+
+.asideFunctions i {
+    margin: 0 10px;
+}
+
+            /* aside search e notifiche */
+
+.asideSearch {
+    height: 180px;
+    background-color: beige;
+}
+
+.impNotif {
+    height: 60%;
+    background-color: rgb(142,218,252);
+    align-items: center;
+    padding: 10px;
+}
+
+.bell{ 
+    align-items: center;
+}
+
+.impNotif i{
+    color: gray;
+    background-color: white;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.riceviNot {
+    font-weight: 500;
+}
+
+.attivaNot {
+    text-decoration: underline;
+    color: gray;
+}
+
+.search {
+    padding: 10px;
+    background-color: rgb(250,250,250);
+    overflow: hidden;
+}
+
+.search input {
+    width: 80%;
+    background-color:rgb(255,255,255);
+    border: none;
+    color: gray;
+}
+
+.search button {
+    height: 50px;
+    width: 20%;
+    background-color:rgb(255,255,255);
+    border: 1px rgb(253,253,253);
+}
+
+.search button i {
+    color: gray;
+}
+
+            /* aside contacts */
+li {
+    list-style: none;
+}
+
+.contacts li {
+    font-size: 14px;
+    padding: 5px;
+    height: 60px;
+}
+
+.contacts li img {
+    align-self: center;
+    max-height: 100%;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.friendInfo {
+    align-self: flex-start;
+}
+
+.friendInfo h4 {
+    margin-bottom: 5px;
+}
+
+.lastTime {
+    margin-left: auto;
+    margin-right: 5px;
+}

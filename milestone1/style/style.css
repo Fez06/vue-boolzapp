@@ -35,6 +35,7 @@ main {
     width: 65%;
     height: 100%;
     background-color: violet;
+    border: 1px black;
 }
 
 
@@ -43,6 +44,32 @@ main {
                 /* chat header */
 
 .chatHeader {
+    background-color: lightblue;
     height: 100px;
-    
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatHeader-sx {
+    height: 100%;
+    align-items: center;
+}
+
+.chatHeader img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.openChatInfo {
+    margin-left: 10px;
+}
+
+.openChatInfo h4 {
+    margin-bottom: 5px;
+}
+
+.chatHeader-dx i {
+    font-size: 25px;
+    margin: 0 10px;
 }
