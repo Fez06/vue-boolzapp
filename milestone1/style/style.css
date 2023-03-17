@@ -101,15 +101,19 @@ main {
 
 .message {
     max-width: 80%;
-    padding: 20px 35px;
+    padding: 20px 50px 20px 15px;
     margin: 5px 10%;
     border-radius: 10px;
     overflow-wrap: break-word;
+    position: relative;
 }
 
 .message .hour {
     font-size: 9px;
     color: lightgray;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 /*                               tastiera e input vari */
