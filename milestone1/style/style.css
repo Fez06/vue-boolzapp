@@ -72,12 +72,13 @@ main {
 .chatHeader-dx i {
     font-size: 20px;
     margin: 0 10px;
+    color: gray;
 }
 
 /*                      chat messaggi */
 
 .chatMonitor {
-    height: calc(100% - 140px);
+    height: calc(100% - 160px);
     padding: 20px;
     background-image: url(../../img/mine.jpg);
 }

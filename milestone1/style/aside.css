@@ -14,6 +14,11 @@
 .asideHeader-sx, .asideFunctions {
     align-items: center;
 }
+
+.asideHeader-sx {
+    width: 40%;
+}
+
 .userPic {
     height: 100%;
     align-items: center;
@@ -93,7 +98,16 @@
     color: gray;
 }
 
-            /* aside contacts */
+/* --------------------- aside contacts */
+
+/* .contacts {
+    width: 100%;
+}
+
+.liCage {
+    width: 100%;
+} */
+
 li {
     list-style: none;
 }
@@ -109,6 +123,7 @@ li {
     max-height: 100%;
     border-radius: 50%;
     margin: 0 15px;
+    
 }
 
 .friendInfo {
