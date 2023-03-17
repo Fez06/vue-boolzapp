@@ -60,12 +60,12 @@
                 <!----------------------contacts -->
                 <div class="contacts">
                     <ul class="liCage">
-                        <li class="flex">
+                        <li class="flex" v-for="contact in contacts">
                             
-                            <img src="../img/avatar_1.jpg" alt="friendPic">
+                            <img :src="avatar" alt="friendPic">
                             
                             <div class="friendInfo">
-                                <h4>Nome</h4>
+                                <h4>{{contact.name}}</h4>
                                 <div>ultimo messaggio inviato</div>
                             </div>
 
