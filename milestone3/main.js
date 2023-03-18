@@ -176,6 +176,18 @@ createApp({
         activeChat(i) {
             //console.log(this.contacts[2].messages)
             this.currentChat = i
+        },
+        answerAuto() {
+            this.contacts[this.currentChat].messages.push({ data: 'now', message: "ok", status: 'received'});
+        },
+        answerMe() {
+            setTimeout(this.answerAuto, 1000)
+        },
+        newMex() {
+            this.contacts[this.currentChat].messages.push({ data: 'now', message: newMexText.value, status: 'sent'});
+            //console.log(newMexText.value)
+            newMexText.value = '';   
+            this.answerMe()
         }
 
     }
