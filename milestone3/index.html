@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/aside.css">
+    <title>Boolzapp</title>
+</head>
+<body>
+    <!-- container per vuejs -->
+    <div id="App" class="flex">
+        <!-- riquadro principale -->
+        <div class="container flex">
+            <!-- funzioni utente / chat thumb / profile ASIDE-->
+            <aside>
+                <div class="asideHeader flex">
+
+                    <div class="asideHeader-sx flex">
+                        <div class="userPic flex">
+                            <img src="img/avatar_io.jpg" alt="profile image">
+                            <h4>Sofia</h4>
+                        </div> 
+                    </div>
+
+                    <div class="asideFunctions flex">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+
+                </div>
+                <!----------------------notifiche e search -->
+                <div class="asideSearch">
+                    <div class="impNotif flex">
+                        <div class="bell flex">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div>
+                            <div class="riceviNot">Ricevi notifiche di nuovi messaggi</div>
+                            <div class="attivaNot">Attiva notifiche desktop</div>
+                        </div>
+                    </div>
+                    <div class="search flex">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat" name="search">
+                        
+                    </div>
+                </div>
+                <!----------------------contacts -->
+                <div class="contacts">
+                    <ul class="liCage">
+                        <li class="flex" v-for="(contact, i) in contacts" @click="activeChat(i)">
+                            
+                            <img :src= 'contact.avatar' alt="friendPic">
+                            
+                            <div class="friendInfo">
+                                <h4>{{contact.name}}</h4>
+                                <div>ultimo messaggio inviato</div>
+                            </div>
+
+                            <div class="lastTime">
+                                <span>ora</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- chat aperta -->
+            <main>
+                <div class="chatHeader flex">  
+                    <div class="chatHeader-sx flex">
+                        <img src="img/avatar_1.jpg" alt="friendPic">
+                        <div class="openChatInfo">
+                            <h4>Nome</h4>
+                            <div>ultimo accesso di oggi alle 12.00</div>
+                        </div>
+                    </div>
+
+                    <div class="chatHeader-dx flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div class="chatMonitor">
+                    <ul class="messageList flex">
+
+                        <li class="message" v-for="(element, i) in contacts[currentChat].messages" :class="element.status">
+                            <div>{{element.message}}</div>
+                            <div class="hour">{{}}</div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="chatInput flex">
+
+                    <div class="chatInput-sx">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+
+                    <div class="chatInput-mid">
+                        <input type="text" placeholder="Scrivi un messaggio" name="search">
+                    </div>
+
+                    <div class="chatInput-dx">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
