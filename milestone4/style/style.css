@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+#App {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,149,136);
+    background: linear-gradient(180deg, rgb(0, 149, 136) 15%, rgb(220,219,211) 10%);
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    background-color: brown;
+
+}
+
+aside {
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+}
+
+main {
+    width: 70%;
+    height: 100%;
+    background-color: violet;
+    border: 1px black;
+}
+
+
+/*                                    MAIN */
+
+/*                    chat header */
+
+.chatHeader {
+    background-color: lightblue;
+    height: 100px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatHeader-sx {
+    height: 100%;
+    align-items: center;
+}
+
+.chatHeader img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+.openChatInfo {
+    margin-left: 10px;
+}
+
+.openChatInfo h4 {
+    margin-bottom: 5px;
+}
+
+.chatHeader-dx i {
+    font-size: 20px;
+    margin: 0 10px;
+    color: gray;
+}
+
+/*                      chat messaggi */
+
+.chatMonitor {
+    height: calc(100% - 160px);
+    padding: 20px;
+    background-image: url(../img/mine.jpg);
+}
+
+.messageList {
+    flex-direction: column;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.received {
+    background-color: white;
+    align-self: flex-end;
+}
+
+.sent {
+    background-color: #d6f8bc;
+    align-self: flex-start;
+}
+
+.message {
+    max-width: 80%;
+    padding: 20px 50px 20px 15px;
+    margin: 5px 10%;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+.message .hour {
+    font-size: 9px;
+    color: lightgray;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/*                               tastiera e input vari */
+
+
+.chatInput {
+    padding: 10px 15px;
+    height: 60px;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatInput i {
+    color: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.chatInput-mid {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.chatInput input {
+    height: 100%;
+    width: 90%;
+}
+
+
+
