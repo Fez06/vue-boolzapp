@@ -77,13 +77,13 @@
                 </div>
             </aside>
 
-            <!-- chat aperta -->
+            <!-- chat -->
             <main>
                 <div class="chatHeader flex">  
                     <div class="chatHeader-sx flex">
-                        <img src="img/avatar_1.jpg" alt="friendPic">
+                        <img :src="contacts[currentChat].avatar" alt="friendPic">
                         <div class="openChatInfo">
-                            <h4>Nome</h4>
+                            <h4>{{contacts[currentChat].name}}</h4>
                             <div>ultimo accesso di oggi alle 12.00</div>
                         </div>
                     </div>
