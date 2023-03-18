@@ -188,6 +188,14 @@ createApp({
             //console.log(newMexText.value)
             newMexText.value = '';   
             this.answerMe()
+        },
+        searchFilter() {
+            if (this.search !== '') {
+                return this.contacts.filter(element => element.toLowerCase().includes(this.search.toLowerCase()))
+            } else {
+                return this.contacts;
+            }
+           
         }
 
     }
