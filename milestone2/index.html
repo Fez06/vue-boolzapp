@@ -60,7 +60,7 @@
                 <!----------------------contacts -->
                 <div class="contacts">
                     <ul class="liCage">
-                        <li class="flex" v-for="contact in contacts">
+                        <li class="flex" v-for="(contact, i) in contacts" @click="activeChat(i)">
                             
                             <img :src= 'contact.avatar' alt="friendPic">
                             
@@ -81,7 +81,7 @@
             <main>
                 <div class="chatHeader flex">  
                     <div class="chatHeader-sx flex">
-                        <img src="img/avatar_1.jpg" alt="friendPic" @click="aCaso">
+                        <img src="img/avatar_1.jpg" alt="friendPic">
                         <div class="openChatInfo">
                             <h4>Nome</h4>
                             <div>ultimo accesso di oggi alle 12.00</div>
@@ -97,15 +97,11 @@
 
                 <div class="chatMonitor">
                     <ul class="messageList flex">
-                        <li class="message received" v-for="">
-                            <div>Hai portato il cane a spasso?</div>
-                            <div class="hour">12.10</div> 
-                        </li>
 
-                        <!-- <li class="message sent">
-                            <div>yessss</div>
-                            <div class="hour">12.10</div>
-                        </li> -->
+                        <li class="message" v-for="(element, i) in contacts[currentChat].messages" :class="element.status">
+                            <div>{{element.message}}</div>
+                            <div class="hour">{{}}</div>
+                        </li>
 
                     </ul>
                 </div>

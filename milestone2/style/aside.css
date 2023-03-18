@@ -101,11 +101,13 @@
 /* --------------------- aside contacts */
 
 /* .contacts {
-    width: 100%;
+    overflow-y: auto;
+    height: 100%;
 }
 
 .liCage {
-    width: 100%;
+    overflow-y: auto;
+    height: 100%;
 } */
 
 li {

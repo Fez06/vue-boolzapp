@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            currentChat: 1,
             contacts: [
                 {
                     name: 'Michele',
@@ -172,8 +173,9 @@ createApp({
         }
     },
     methods: {
-        aCaso() {
-            console.log(this.contacts[2].messages)
+        activeChat(i) {
+            //console.log(this.contacts[2].messages)
+            this.currentChat = i
         }
 
     }
