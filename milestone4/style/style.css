@@ -28,13 +28,13 @@
 aside {
     width: 30%;
     height: 100%;
-    background-color: pink;
+    background-color: white;
 }
 
 main {
     width: 70%;
     height: 100%;
-    background-color: violet;
+    background-color: white;
     border: 1px black;
 }
 
@@ -44,7 +44,7 @@ main {
 /*                    chat header */
 
 .chatHeader {
-    background-color: lightblue;
+    background-color: #eaeaea;
     height: 100px;
     padding: 10px;
     align-items: center;
@@ -95,7 +95,7 @@ main {
 }
 
 .sent {
-    background-color: #d6f8bc;
+    background-color: #d5f9ba;
     align-self: flex-start;
 }
 
@@ -122,9 +122,10 @@ main {
 .chatInput {
     padding: 10px 15px;
     height: 60px;
-    background-color: aqua;
+    background-color: #f3eeea;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .chatInput i {
@@ -142,6 +143,7 @@ main {
 .chatInput input {
     height: 100%;
     width: 90%;
+    border: 0;
 }
 
 

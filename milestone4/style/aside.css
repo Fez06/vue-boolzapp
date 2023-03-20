@@ -8,7 +8,7 @@
 .asideHeader {
     justify-content: space-between;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #eaeaea;
 }
 
 .asideHeader-sx, .asideFunctions {
@@ -47,7 +47,7 @@
 
 .impNotif {
     height: 60%;
-    background-color: rgb(142,218,252);
+    background-color: #8edafc;
     align-items: center;
     padding: 10px;
 }
