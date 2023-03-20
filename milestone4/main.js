@@ -196,8 +196,12 @@ createApp({
             //console.log(this.searchKey)
             //this.listaNomi = this.contacts.filter(element => element.name);
             //console.log(this.listaNomi)
+            /*console.log(this.contacts)
+            this.contacts.filter((element) => {
+                console.log(element.name)
+                })*/
             if (this.searchKey !== '') {
-                return this.contacts.filter(element => element.includes(this.searchKey))
+                return this.contacts.filter((element) => element.name.includes(this.searchKey))
             } else {
                 return this.contacts;
             }
