@@ -8,7 +8,7 @@
 .asideHeader {
     justify-content: space-between;
     padding: 10px;
-    background-color: lightblue;
+    background-color: #eaeaea;
 }
 
 .asideHeader-sx, .asideFunctions {
@@ -42,12 +42,11 @@
 
 .asideSearch {
     height: 180px;
-    background-color: beige;
 }
 
 .impNotif {
     height: 60%;
-    background-color: rgb(142,218,252);
+    background-color: #8edafc;
     align-items: center;
     padding: 10px;
 }
@@ -100,16 +99,24 @@
 
 /* --------------------- aside contacts */
 
-/* .contacts {
-    width: 100%;
+.contacts {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100% - 280px);
 }
 
 .liCage {
-    width: 100%;
-} */
+    overflow-y: auto;
+    height: 100%;
+}
+
+.singleContact {
+    border-top: 1px solid #F9F9F9;
+}
 
 li {
     list-style: none;
+    
 }
 
 .contacts li {
