@@ -201,7 +201,7 @@ createApp({
                 console.log(element.name)
                 })*/
             if (this.searchKey !== '') {
-                return this.contacts.filter((element) => element.name.includes(this.searchKey))
+                return this.contacts.filter((element) => element.name.toLowerCase().includes(this.searchKey.toLowerCase()))
             } else {
                 return this.contacts;
             }
