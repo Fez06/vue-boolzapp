@@ -180,13 +180,13 @@ createApp({
             this.currentChat = i
         },
         answerAuto() {
-            this.contacts[this.currentChat].messages.push({ data: 'now', message: "ok", status: 'received'});
+            this.contacts[this.currentChat].messages.push({ date: 'now', message: "ok", status: 'received'});
         },
         answerMe() {
             setTimeout(this.answerAuto, 1000)
         },
         newMex() {
-            this.contacts[this.currentChat].messages.push({ data: 'now', message: newMexText.value, status: 'sent'});
+            this.contacts[this.currentChat].messages.push({ date: 'now', message: newMexText.value, status: 'sent'});
             //console.log(newMexText.value)
             newMexText.value = '';   
             this.answerMe()
