@@ -61,7 +61,7 @@
                 <!----------------------contacts -->
                 <div class="contacts">
                     <ul class="liCage">
-                        <li class="flex" v-for="(contact, i) in listaFiltrata()" @click="activeChat(i)">
+                        <li class="flex singleContact" v-for="(contact, i) in listaFiltrata()" @click="activeChat(i)">
                             
                             <img :src= 'contact.avatar' alt="friendPic">
                             
@@ -101,7 +101,7 @@
 
                         <li class="message" v-for="(element, i) in contacts[currentChat].messages" :class="element.status">
                             <div>{{element.message}}</div>
-                            <div class="hour">{{}}</div>
+                            <div class="hour">{{element.date}}</div>
                         </li>
 
                     </ul>
@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="chatInput-mid">
-                        <input type="text" placeholder="Scrivi un messaggio" id="newMexText" @keyup.enter="newMex">
+                        <input type="text" placeholder="  Scrivi un messaggio" id="newMexText" @keyup.enter="newMex">
                     </div>
 
                     <div class="chatInput-dx">
