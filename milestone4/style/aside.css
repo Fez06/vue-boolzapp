@@ -100,15 +100,17 @@
 
 /* --------------------- aside contacts */
 
-/* .contacts {
-    overflow-y: auto;
-    height: 100%;
+.contacts {
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100% - 280px);
+    padding: 10px 0;
 }
 
 .liCage {
     overflow-y: auto;
     height: 100%;
-} */
+}
 
 li {
     list-style: none;
