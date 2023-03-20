@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             searchKey: '',
+            listaNomi: [''],
             currentChat: 1,
             contacts: [
                 {
@@ -192,9 +193,11 @@ createApp({
         },
         
         listaFiltrata() {
-            console.log(this.searchKey)
+            //console.log(this.searchKey)
+            //this.listaNomi = this.contacts.filter(element => element.name);
+            //console.log(this.listaNomi)
             if (this.searchKey !== '') {
-                return this.contacts.filter(element => element.toLowerCase().includes(this.searchKey.toLowerCase()))
+                return this.contacts.filter(element => element.includes(this.searchKey))
             } else {
                 return this.contacts;
             }
