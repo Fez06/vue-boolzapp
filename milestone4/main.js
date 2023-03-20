@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+            searchKey: '',
             currentChat: 1,
             contacts: [
                 {
@@ -189,9 +190,11 @@ createApp({
             newMexText.value = '';   
             this.answerMe()
         },
-        searchFilter() {
-            if (this.search !== '') {
-                return this.contacts.filter(element => element.toLowerCase().includes(this.search.toLowerCase()))
+        
+        listaFiltrata() {
+            console.log(this.searchKey)
+            if (this.searchKey !== '') {
+                return this.contacts.filter(element => element.toLowerCase().includes(this.searchKey.toLowerCase()))
             } else {
                 return this.contacts;
             }

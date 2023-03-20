@@ -54,7 +54,7 @@
                         <button type="submit">
                             <i class="fa fa-search"></i>
                         </button>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat" name="search" id="search" @keyup="searchFilter">
+                        <input @keyup="listaFiltrata" v-model="searchKey" type="text" placeholder="Cerca o inizia una nuova chat" name="search" id="search"   >
                         
                     </div>
                 </div>
